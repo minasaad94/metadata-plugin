@@ -55,7 +55,7 @@ const META_ADDONS = [
 const STREAM_ADDONS = [
   {
     name: "My IPTV Addon",
-    enabled: false, // <-- Change to true after pasting your real URL
+    enabled: true, // <-- Change to true after pasting your real URL
     url: "https://stremio-iptv-addon-ten.vercel.app/eyJtb2RlIjoieHRyZWFtIiwiaG9zdCI6Imh0dHA6Ly9zZXJ2eC5wcm8iLCJ1c2VyIjoiTUIiLCJwYXNzIjoiTUA1NzkwYiIsInNob3dWb2RDYXRhbG9ncyI6dHJ1ZX0/manifest.json",
     idMode: "auto",        // Tries IMDb (tt...) & TMDB (tmdb:...) in parallel
     catalogFallback: true, // Searches addon's catalog by Arabic/Franco/English if ID fails
