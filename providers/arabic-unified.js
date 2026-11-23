@@ -14,7 +14,7 @@
 const CONFIG = {
   // Optional (Recommended): Free TMDB API Key from https://www.themoviedb.org/settings/api
   // Leave empty "" if you don't have one yet — the plugin will use Cinemeta + META_ADDONS automatically.
-  TMDB_API_KEY: "",
+  TMDB_API_KEY: "f2e1c5a7a966b71d96faa9ec098ec645",
 
   // Performance & Matching Controls
   META_CACHE_TTL_MS: 24 * 60 * 60 * 1000, // 24 hours
