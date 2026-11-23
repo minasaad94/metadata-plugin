@@ -14,17 +14,17 @@
 
 const CONFIG = {
   // 1. Required: Free TMDB API Key from https://www.themoviedb.org/settings/api
-  TMDB_API_KEY: "YOUR_TMDB_API_KEY",
+  TMDB_API_KEY: "f2e1c5a7a966b71d96faa9ec098ec645",
 
   // 2. Optional: Metadata Fallback Addons (e.g., ArabCinemeta)
   // Used to enrich Arabic titles or resolve IDs when TMDB is incomplete.
   META_ADDONS: [
-    // {
-    //   name: "Arab Cinemeta",
-    //   enabled: true,
-    //   url: "https://your-arab-cinemeta-link.com/manifest.json",
-    //   headers: {}
-    // }
+     {
+      name: "Arab Cinemeta",
+      enabled: true,
+      url: "https://arabcinemeta.osamayousry.com/c/rAEMAAD_-f_fCvuf358APQA/manifest.json",
+      headers: {}
+     }
   ],
 
   // 3. Performance & Accuracy Tuning
@@ -47,10 +47,10 @@ const PLUGINS = [
   // [TYPE 1] External Stremio Addon (IPTV Server Addon, Arab Addons, etc.)
   {
     type: "stremio",
-    name: "My IPTV Addon",
-    enabled: false,
+    name: "IPTV Live & VOD",
+    enabled: true,
     // Paste the full manifest URL or base URL (tokens/config segments are preserved automatically)
-    url: "https://your-iptv-addon.vercel.app/manifest.json",
+    url: "https://stremio-iptv-addon-ten.vercel.app/eyJtb2RlIjoieHRyZWFtIiwiaG9zdCI6Imh0dHA6Ly9zZXJ2eC5wcm8iLCJ1c2VyIjoiTUIiLCJwYXNzIjoiTUA1NzkwYiIsInNob3dWb2RDYXRhbG9ncyI6dHJ1ZX0/manifest.json",
     // "auto" tries IMDb (tt...) then TMDB (tmdb:...) — fixes ArabCinemeta mismatches
     idMode: "auto",
     // Set true ONLY for addons that use internal IDs instead of tt... (searches their catalog by Arabic/Franco/English)
@@ -67,6 +67,20 @@ const PLUGINS = [
     url: "https://torrentio.strem.fun/manifest.json",
     idMode: "imdb",
     catalogFallback: false,
+    timeoutMs: 5000,
+    headers: {}
+  },
+
+   },
+
+  // [TYPE 1 - Example B] Public / Torrent Stremio Addon
+  {
+    type: "stremio",
+    name: "cncverse",
+    enabled: true,
+    url: "https://cncverse.dpdns.org/u/p_m8znctbp9427/manifest.json",
+    idMode: "imdb",
+    catalogFallback: true,
     timeoutMs: 5000,
     headers: {}
   },
