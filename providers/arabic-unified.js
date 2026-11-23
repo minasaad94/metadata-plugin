@@ -34,16 +34,16 @@ const META_ADDONS = [
   {
     name: "Cinemeta",
     enabled: true,
-    url: "https://v3-cinemeta.strem.io/manifest.json",
+    url: "https://catalog.nuvio.tv/%7B%22language%22%3A%22en-US%22%2C%22region%22%3A%22EG%22%7D/manifest.json",
     headers: {}
   }
   // Add Arab Cinemeta below (uncomment and paste your real URL):
-  // ,{
-  //   name: "Arab Cinemeta",
-  //   enabled: true,
-  //   url: "https://your-arab-cinemeta-url.com/manifest.json",
-  //   headers: {}
-  // }
+   ,{
+      name: "Arab Cinemeta",
+      enabled: true,
+      url: "https://arabcinemeta.osamayousry.com/c/rAEMAAD_-f_fCvuf358APQA/manifest.json",
+      headers: {}
+    }
 ];
 
 /**
@@ -56,7 +56,7 @@ const STREAM_ADDONS = [
   {
     name: "My IPTV Addon",
     enabled: false, // <-- Change to true after pasting your real URL
-    url: "https://your-iptv-addon.vercel.app/manifest.json",
+    url: "https://stremio-iptv-addon-ten.vercel.app/eyJtb2RlIjoieHRyZWFtIiwiaG9zdCI6Imh0dHA6Ly9zZXJ2eC5wcm8iLCJ1c2VyIjoiTUIiLCJwYXNzIjoiTUA1NzkwYiIsInNob3dWb2RDYXRhbG9ncyI6dHJ1ZX0/manifest.json",
     idMode: "auto",        // Tries IMDb (tt...) & TMDB (tmdb:...) in parallel
     catalogFallback: true, // Searches addon's catalog by Arabic/Franco/English if ID fails
     timeoutMs: 7000,
