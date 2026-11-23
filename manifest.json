@@ -1,14 +1,14 @@
 {
-  "name": "Arabic Unified Universal Hub (v4 Fast)",
-  "version": "4.0.0",
-  "description": "High-speed direct Nuvio plugin unifying Arabic & English metadata (TMDB <-> IMDb + ArabCinemeta fallback) with token-indexed fuzzy matching across Stremio Addons, Xtream VOD/Series, M3U, JSON APIs, and Custom JS Scrapers under one canonical ID to preserve watch progress.",
+  "name": "Arabic Unified Addon Bridge (v5)",
+  "version": "5.0.0",
+  "description": "Lightweight, high-speed direct Nuvio plugin focused exclusively on unifying external Stremio Addons (IPTV, Arab Cinemeta, Torrent/Stream addons) under canonical TMDB/IMDb IDs with Arabic/Franco-Arab catalog fallback.",
   "author": "Mina",
   "scrapers": [
     {
-      "id": "arabic-unified-universal",
-      "name": "Arabic Unified Hub (v4)",
-      "description": "Fast & accurate multi-source hub for Stremio Addons, Xtream, M3U, APIs & Custom JS with Arabic/Franco-Arab matching.",
-      "version": "4.0.0",
+      "id": "arabic-unified-addons",
+      "name": "Arabic Unified Addons (v5)",
+      "description": "Bridges external Stremio Addons under canonical IDs with Arabic/Franco-Arab matching.",
+      "version": "5.0.0",
       "filename": "providers/arabic-unified.js",
       "enabled": true,
       "supportedTypes": [

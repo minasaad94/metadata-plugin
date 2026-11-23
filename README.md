@@ -1,10 +1,10 @@
-# Nuvio Arabic Unified Hub (v4.0.0 — Fast & Accurate)
+# Arabic Unified Addon Bridge (v5.0.0)
 
-نسخة محسّنة وأسرع وأدق من v3، تعمل **مباشرة داخل Nuvio** بدون سيرفر وسيط خاص بك، مع الإبقاء على جميع طرق الربط (`stremio`, `xtream`, `m3u`, `api`, `custom`).
+إضافة مباشرة خفيفة وسريعة لتطبيق **Nuvio** مخصصة حصرياً لربط إضافات **Stremio Addons** الخارجية (إضافة IPTV، Arab Cinemeta، Torrentio، إلخ) تحت معرّف واحد (**TMDB ↔ IMDb**) للحفاظ على نفس الـ **Watch Progress**.
 
-## أبرز التحسينات في v4
-1. **فهرسة سريعة بالكلمات (Token-Indexed Search):** البحث في قوائم Xtream أو M3U الضخمة يتم عبر فهرس كلمات و`TMDB ID` وتطابق مباشر بدلاً من فحص القائمة بالكامل في كل مرة.
-2. **دعم Arab Cinemeta كـ Fallback للميتاداتا:** عبر `CONFIG.META_ADDONS` لإثراء الأسماء العربية وحل فرق المعرّفات بين `tmdb` و `tt...`.
-3. **تطبيع أدق للنصوص:** يدعم الأرقام العربية (`٠-٩`) والأرقام الرومانية (`II`, `III`) وتنظيف زوائد الجودات (`HDR`, `Dolby`, `Atmos`, `WEB-DL`) بدون حذف أرقام الأجزاء.
-4. **كاش للروابط النهائية (`streamCache`)** لمدة 10 دقائق + بحث متوازي بـ `Timeout` محدد لكل إضافة.
-
+## طريقة الاستخدام
+1. ارفع الملفات (`manifest.json`, `README.md`, وفولدر `providers`) على الـ Repository بتاعك على GitHub.
+2. افتح `providers/arabic-unified.js`:
+   - ضيف لينك إضافة الـ IPTV وباقي الإضافات جوه `STREAM_ADDONS` وخلّي `enabled: true`.
+   - (اختياري) ضيف لينك **Arab Cinemeta** جوه `META_ADDONS`، ومفتاح **TMDB API Key** في `CONFIG.TMDB_API_KEY` لأفضل دقة في الأسماء العربية.
+3. أضف رابط الـ Repo في Nuvio واضغط **Test** (الإضافة مفعّل فيها Torrentio افتراضياً وبتشتغل حتى بدون مفتاح TMDB عشان تنجح في الاختبار فوراً).
