@@ -55,7 +55,7 @@ const PLUGINS = [
     idMode: "auto",
     // Set true ONLY for addons that use internal IDs instead of tt... (searches their catalog by Arabic/Franco/English)
     catalogFallback: true,
-    timeoutMs: 6500,
+    timeoutMs: 8500,
     headers: {}
   },
 
